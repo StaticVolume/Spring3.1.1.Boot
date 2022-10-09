@@ -1,7 +1,18 @@
 package ru.springBoot311.SpringBoot.sources.model;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.*;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Email;
+
 
 @Entity
 @Table(name = "users")
