@@ -12,6 +12,11 @@ import java.util.List;
 @Repository
 public class UserDaoImpl implements UserDao {
 
+    /**пришлось убрать коструктор с параметром EntityManager потому что после перехода на SpringBoot
+     * от нас ушёл файл конфигурации с определением бина EntityManager, и сейчас
+     * в реализованном кострукторе с этим параметром идет мерзкое красное подчёркивание
+     * бесит
+     * */
    @PersistenceContext
     private   EntityManager entityManager;
 
